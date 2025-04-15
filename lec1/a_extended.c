@@ -20,7 +20,6 @@
 #define frand() (rand() % 10000 / 10001.0)
 #define randomize() srand((unsigned int)time(NULL))
 
-//(0,0,-1); (0,1,-1); (1,0,-1); (1,1,-1)
 double x[n_sample][I] = {
     {0, 0, -1},
     {0, 1, -1},
@@ -29,7 +28,11 @@ double x[n_sample][I] = {
 };
 
 double w[I];
-double d[n_sample] = {-1, -1, -1, 1};
+double d[n_sample] = {0, 0, 0, 1};
+/*You can change the output values
+    or 0, 0, 0, 1 for OR gate
+    or 1, 1, 1, -1 for NAND gate
+*/
 double o;
 
 void deltaLearning(void);
@@ -38,7 +41,7 @@ void Initialization(void);
 void FindOutput(int);
 void FindOutputPerceptron(int);
 void PrintResult(void);
-void printNeuronOutput();
+void printNeuronOutput(int);
 
 int main() {
     deltaLearning();
@@ -55,8 +58,8 @@ void deltaLearning() {
 
     Initialization();
     printf("The initial connection weights of the neurons:\n");
-    printNeuronOutput();
-    printf("\n\n");
+    PrintResult();
+    printNeuronOutput(0);
 
     while (Error > desired_error) {
         q++;
@@ -68,11 +71,11 @@ void deltaLearning() {
                 delta = (d[p] - o) * (1 - o * o) / 2;
                 w[i] += eta * delta * x[p][i];
             }
-            printf("Error in the %d-th learning cycle=%f\n", q, Error);
         }
+        printf("Error in the %d-th learning cycle=%f\n", q, Error);
     }
     PrintResult();
-    printNeuronOutput();
+    printNeuronOutput(0);
 }
 
 void perceptronLearning() {
@@ -80,9 +83,11 @@ void perceptronLearning() {
     double LearningSignal = 1.0, Error = DBL_MAX;
 
     Initialization();
-    printf("The initial connection weights of the neurons:\n");
-    printNeuronOutput();
-    printf("\n\n");
+    printf(
+        "######################## The initial connection weights of the "
+        "neurons ######################## ");
+    PrintResult();
+    printNeuronOutput(1);
 
     while (Error > desired_error) {
         q++;
@@ -98,7 +103,7 @@ void perceptronLearning() {
         printf("Error in the %d-th learning cycle=%f\n", q, Error);
     }
     PrintResult();
-    printNeuronOutput();
+    printNeuronOutput(1);
 }
 
 /*************************************************************/
@@ -137,24 +142,39 @@ void PrintResult(void) {
     int i;
 
     printf("\n\n");
-    printf("The connection weights of the neurons:\n");
+    printf("The connection weights of the neurons \n");
     for (i = 0; i < I; i++) printf("%5f ", w[i]);
-    printf("\n\n");
+    // printf("\n");
 }
 
-void printNeuronOutput() {
+void printNeuronOutput(int type) {
+    // type = 1: perceptron learning, type = 2: delta learning;
     int p, i;
     double u;
-    int output;
 
     printf("\nNeuron output for each input pattern:\n");
-    for (p = 0; p < n_sample; p++) {
-        u = 0.0;
-        for (i = 0; i < I; i++) {
-            u += w[i] * x[p][i];
+    if (type == 0) {
+        double output;
+        for (p = 0; p < n_sample; p++) {
+            u = 0.0;
+            for (i = 0; i < I; i++) {
+                u += w[i] * x[p][i];
+            }
+            output = sigmoid(u);
+            printf("Input (%f, %f, %f) -> Output: %f (Teacher: %f)\n", x[p][0],
+                   x[p][1], x[p][2], output, d[p]);
         }
-        output = (u > 0) ? 1 : -1;
-        printf("Input (%f, %f, %f) -> Output: %d (Teacher: %f)\n", x[p][0],
-               x[p][1], x[p][2], output, d[p]);
+    } else {
+        int output;
+        for (p = 0; p < n_sample; p++) {
+            u = 0.0;
+            for (i = 0; i < I; i++) {
+                u += w[i] * x[p][i];
+            }
+            output = (u > 0) ? 1 : -1;
+            printf("Input (%f, %f, %f) -> Output: %d (Teacher: %f)\n", x[p][0],
+                   x[p][1], x[p][2], output, d[p]);
+        }
     }
+    printf("\n");
 }
