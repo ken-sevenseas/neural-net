@@ -40,32 +40,6 @@ void FindOutputPerceptron(int);
 void PrintResult(void);
 void printNeuronOutput();
 
-// int main() {
-//     int i, p, q = 0;
-//     double LearningSignal = 1.0, Error = DBL_MAX;
-
-//     Initialization();
-//     printf("The initial connection weights of the neurons:\n");
-//     printNeuronOutput();
-//     printf("\n\n");
-
-//     while (Error > desired_error) {
-//         q++;
-//         Error = 0;
-//         for (p = 0; p < n_sample; p++) {
-//             FindOutputPerceptron(p);
-//             Error += 0.5 * pow(d[p] - o, 2.0);
-//             LearningSignal = eta * (d[p] - o);
-//             for (i = 0; i < I; i++) {
-//                 w[i] += LearningSignal * x[p][i];
-//             }
-//         }
-//         printf("Error in the %d-th learning cycle=%f\n", q, Error);
-//     }
-//     PrintResult();
-//     printNeuronOutput();
-// }
-
 int main() {
     deltaLearning();
     perceptronLearning();
