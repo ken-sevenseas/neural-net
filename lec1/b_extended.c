@@ -51,12 +51,12 @@ int main() {
     printf(
         "Choose the learning rule (1: discret (Perceptron learning), 2: "
         "continuous (Delta learning))\n");
-    printf("Enter the type of learning rule (0 or 1): >>> ");
+    printf("Enter the type of learning rule (1 or 2): >>> ");
     scanf("%d", &type);
-    if (type == 0) {
-        deltaLearning();
-    } else {
+    if (type == 1) {
         perceptronLearning();
+    } else {
+        deltaLearning();
     }
     return 0;
 }
@@ -99,9 +99,9 @@ void deltaLearning() {
     double delta;
 
     Initialization();
-    printf("The initial connection weights of the neurons:\n");
+    printf("\n The initial connection weights of the neurons:\n");
     printNeuronOutput(2);
-    printf("\n\n");
+    printf("\n");
     while (Error > desired_error) {
         q++;
         Error = 0;
@@ -169,13 +169,12 @@ void FindOutputStep(int p) {
 void PrintResult(void) {
     int i, j;
 
-    printf("\n\n");
+    printf("\n");
     printf("The connection weights are:\n");
     for (i = 0; i < R; i++) {
         for (j = 0; j < N; j++) printf("%5f ", w[i][j]);
         printf("\n");
     }
-    printf("\n\n");
 }
 
 void printNeuronOutput(int type) {
