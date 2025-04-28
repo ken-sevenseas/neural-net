@@ -110,7 +110,7 @@ void RunExperiment(int hiddenNeurons) {
     for (p = 0; p < n_sample; p++) {
         FindHidden(p);
         FindOutput();
-        printf("%d %d %d %d\t%d\t%.4f\n", (int)x[p][0], (int)x[p][1],
+        printf("%d %d %d %d\t\t%d\t\t%.4f\n", (int)x[p][0], (int)x[p][1],
                (int)x[p][2], (int)x[p][3], (int)d[p][0], o[0]);
     }
 }
