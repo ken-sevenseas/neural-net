@@ -1,0 +1,340 @@
+Select experiment type:
+1. Parity check
+2. XNOR
+Enter choice (1 or 2): 
+Running XNOR experiments
+
+
+---------------------------------------------
+Running XNOR experiment with 4 hidden neurons
+---------------------------------------------
+Error in the 100-th learning cycle = 2.070737
+Error in the 200-th learning cycle = 2.050980
+Error in the 300-th learning cycle = 1.722380
+Error in the 400-th learning cycle = 1.311314
+Error in the 500-th learning cycle = 0.193919
+Error in the 600-th learning cycle = 0.054253
+Error in the 700-th learning cycle = 0.029343
+Error in the 800-th learning cycle = 0.019707
+Error in the 900-th learning cycle = 0.014703
+Error in the 1000-th learning cycle = 0.011668
+Error in the 1100-th learning cycle = 0.009643
+Error in the 1200-th learning cycle = 0.008201
+Error in the 1300-th learning cycle = 0.007124
+Error in the 1400-th learning cycle = 0.006290
+Error in the 1500-th learning cycle = 0.005627
+Error in the 1600-th learning cycle = 0.005087
+Error in the 1700-th learning cycle = 0.004639
+Error in the 1800-th learning cycle = 0.004262
+Error in the 1900-th learning cycle = 0.003941
+Error in the 2000-th learning cycle = 0.003663
+Error in the 2100-th learning cycle = 0.003421
+Error in the 2200-th learning cycle = 0.003209
+Error in the 2300-th learning cycle = 0.003020
+Error in the 2400-th learning cycle = 0.002853
+Error in the 2500-th learning cycle = 0.002702
+Error in the 2600-th learning cycle = 0.002566
+Error in the 2700-th learning cycle = 0.002443
+Error in the 2800-th learning cycle = 0.002331
+Error in the 2900-th learning cycle = 0.002229
+Error in the 3000-th learning cycle = 0.002135
+Error in the 3100-th learning cycle = 0.002049
+Error in the 3200-th learning cycle = 0.001969
+Error in the 3300-th learning cycle = 0.001895
+Error in the 3400-th learning cycle = 0.001826
+Error in the 3500-th learning cycle = 0.001762
+Error in the 3600-th learning cycle = 0.001702
+Error in the 3700-th learning cycle = 0.001646
+Error in the 3800-th learning cycle = 0.001594
+Error in the 3900-th learning cycle = 0.001545
+Error in the 4000-th learning cycle = 0.001498
+Error in the 4100-th learning cycle = 0.001455
+Error in the 4200-th learning cycle = 0.001413
+Error in the 4300-th learning cycle = 0.001374
+Error in the 4400-th learning cycle = 0.001337
+Error in the 4500-th learning cycle = 0.001302
+Error in the 4600-th learning cycle = 0.001269
+Error in the 4700-th learning cycle = 0.001237
+Error in the 4800-th learning cycle = 0.001207
+Error in the 4900-th learning cycle = 0.001178
+Error in the 5000-th learning cycle = 0.001151
+Error in the 5100-th learning cycle = 0.001125
+Error in the 5200-th learning cycle = 0.001100
+Error in the 5300-th learning cycle = 0.001076
+Error in the 5400-th learning cycle = 0.001053
+Error in the 5500-th learning cycle = 0.001031
+Error in the 5600-th learning cycle = 0.001010
+Error in the 5648-th learning cycle = 0.001000
+
+The connection weights in the output layer:
+10.629720 0.720390 -10.618964 -5.039956 
+
+The connection weights in the hidden layer:
+-6.686018 -6.743123 0.273885 0.275032 -2.527923 
+-1.657125 -1.897722 0.102116 0.017671 1.302834 
+-5.144206 -5.159805 0.188101 0.186653 -7.484949 
+
+Test results for XNOR with 4 hidden neurons:
+Input 1	Input 2	Desired	Output
+0	0	1	0.9882
+0	0	1	0.9901
+0	0	1	0.9902
+0	0	1	0.9915
+0	1	0	0.0115
+0	1	0	0.0104
+0	1	0	0.0105
+0	1	0	0.0098
+1	0	0	0.0116
+1	0	0	0.0105
+1	0	0	0.0105
+1	0	0	0.0100
+1	1	1	0.9884
+1	1	1	0.9870
+1	1	1	0.9870
+1	1	1	0.9852
+
+
+---------------------------------------------
+Running XNOR experiment with 6 hidden neurons
+---------------------------------------------
+Error in the 100-th learning cycle = 2.074698
+Error in the 200-th learning cycle = 1.074568
+Error in the 300-th learning cycle = 0.088890
+Error in the 400-th learning cycle = 0.036924
+Error in the 500-th learning cycle = 0.022488
+Error in the 600-th learning cycle = 0.015958
+Error in the 700-th learning cycle = 0.012288
+Error in the 800-th learning cycle = 0.009953
+Error in the 900-th learning cycle = 0.008344
+Error in the 1000-th learning cycle = 0.007171
+Error in the 1100-th learning cycle = 0.006280
+Error in the 1200-th learning cycle = 0.005581
+Error in the 1300-th learning cycle = 0.005018
+Error in the 1400-th learning cycle = 0.004556
+Error in the 1500-th learning cycle = 0.004170
+Error in the 1600-th learning cycle = 0.003843
+Error in the 1700-th learning cycle = 0.003563
+Error in the 1800-th learning cycle = 0.003319
+Error in the 1900-th learning cycle = 0.003106
+Error in the 2000-th learning cycle = 0.002919
+Error in the 2100-th learning cycle = 0.002752
+Error in the 2200-th learning cycle = 0.002603
+Error in the 2300-th learning cycle = 0.002469
+Error in the 2400-th learning cycle = 0.002347
+Error in the 2500-th learning cycle = 0.002237
+Error in the 2600-th learning cycle = 0.002137
+Error in the 2700-th learning cycle = 0.002045
+Error in the 2800-th learning cycle = 0.001960
+Error in the 2900-th learning cycle = 0.001882
+Error in the 3000-th learning cycle = 0.001810
+Error in the 3100-th learning cycle = 0.001743
+Error in the 3200-th learning cycle = 0.001681
+Error in the 3300-th learning cycle = 0.001623
+Error in the 3400-th learning cycle = 0.001569
+Error in the 3500-th learning cycle = 0.001518
+Error in the 3600-th learning cycle = 0.001470
+Error in the 3700-th learning cycle = 0.001425
+Error in the 3800-th learning cycle = 0.001383
+Error in the 3900-th learning cycle = 0.001343
+Error in the 4000-th learning cycle = 0.001306
+Error in the 4100-th learning cycle = 0.001270
+Error in the 4200-th learning cycle = 0.001236
+Error in the 4300-th learning cycle = 0.001204
+Error in the 4400-th learning cycle = 0.001174
+Error in the 4500-th learning cycle = 0.001145
+Error in the 4600-th learning cycle = 0.001117
+Error in the 4700-th learning cycle = 0.001091
+Error in the 4800-th learning cycle = 0.001066
+Error in the 4900-th learning cycle = 0.001042
+Error in the 5000-th learning cycle = 0.001019
+Error in the 5085-th learning cycle = 0.001000
+
+The connection weights in the output layer:
+-1.570346 -9.758958 0.203250 -9.198898 4.439806 -4.621645 
+
+The connection weights in the hidden layer:
+0.078624 -2.291341 0.310627 0.402116 0.240581 
+-6.902849 5.198532 -0.010025 -0.039395 2.379462 
+-0.183299 -0.443531 0.294304 -0.098159 0.950054 
+4.640911 -6.570253 -0.077924 -0.122805 1.991718 
+-4.073956 -3.910622 0.186116 0.167396 -0.556231 
+
+Test results for XNOR with 6 hidden neurons:
+Input 1	Input 2	Desired	Output
+0	0	1	0.9924
+0	0	1	0.9935
+0	0	1	0.9935
+0	0	1	0.9944
+0	1	0	0.0108
+0	1	0	0.0107
+0	1	0	0.0109
+0	1	0	0.0107
+1	0	0	0.0108
+1	0	0	0.0102
+1	0	0	0.0104
+1	0	0	0.0099
+1	1	1	0.9851
+1	1	1	0.9847
+1	1	1	0.9849
+1	1	1	0.9842
+
+
+---------------------------------------------
+Running XNOR experiment with 8 hidden neurons
+---------------------------------------------
+Error in the 100-th learning cycle = 2.101314
+Error in the 200-th learning cycle = 1.560914
+Error in the 300-th learning cycle = 0.095244
+Error in the 400-th learning cycle = 0.035434
+Error in the 500-th learning cycle = 0.020811
+Error in the 600-th learning cycle = 0.014500
+Error in the 700-th learning cycle = 0.011041
+Error in the 800-th learning cycle = 0.008874
+Error in the 900-th learning cycle = 0.007397
+Error in the 1000-th learning cycle = 0.006329
+Error in the 1100-th learning cycle = 0.005523
+Error in the 1200-th learning cycle = 0.004894
+Error in the 1300-th learning cycle = 0.004389
+Error in the 1400-th learning cycle = 0.003977
+Error in the 1500-th learning cycle = 0.003633
+Error in the 1600-th learning cycle = 0.003342
+Error in the 1700-th learning cycle = 0.003094
+Error in the 1800-th learning cycle = 0.002879
+Error in the 1900-th learning cycle = 0.002691
+Error in the 2000-th learning cycle = 0.002525
+Error in the 2100-th learning cycle = 0.002379
+Error in the 2200-th learning cycle = 0.002248
+Error in the 2300-th learning cycle = 0.002130
+Error in the 2400-th learning cycle = 0.002024
+Error in the 2500-th learning cycle = 0.001927
+Error in the 2600-th learning cycle = 0.001839
+Error in the 2700-th learning cycle = 0.001759
+Error in the 2800-th learning cycle = 0.001685
+Error in the 2900-th learning cycle = 0.001617
+Error in the 3000-th learning cycle = 0.001554
+Error in the 3100-th learning cycle = 0.001496
+Error in the 3200-th learning cycle = 0.001442
+Error in the 3300-th learning cycle = 0.001391
+Error in the 3400-th learning cycle = 0.001344
+Error in the 3500-th learning cycle = 0.001300
+Error in the 3600-th learning cycle = 0.001259
+Error in the 3700-th learning cycle = 0.001220
+Error in the 3800-th learning cycle = 0.001183
+Error in the 3900-th learning cycle = 0.001149
+Error in the 4000-th learning cycle = 0.001116
+Error in the 4100-th learning cycle = 0.001085
+Error in the 4200-th learning cycle = 0.001056
+Error in the 4300-th learning cycle = 0.001028
+Error in the 4400-th learning cycle = 0.001002
+Error in the 4409-th learning cycle = 0.001000
+
+The connection weights in the output layer:
+-0.218485 0.299839 -0.363677 10.427139 -0.591653 -6.681071 -5.395604 4.340674 
+
+The connection weights in the hidden layer:
+-0.211141 -1.074402 0.358967 0.447663 0.286844 
+-0.668711 -1.047051 0.317104 0.221628 0.968320 
+-0.139907 -0.476642 0.354950 0.021770 0.856780 
+6.444318 -6.415030 0.166731 0.134457 -3.039116 
+-0.266450 -0.451781 0.669959 0.481983 0.669548 
+4.732664 -4.805921 -0.155613 -0.082679 2.660495 
+4.127088 -4.205132 -0.086667 -0.125854 2.399501 
+
+Test results for XNOR with 8 hidden neurons:
+Input 1	Input 2	Desired	Output
+0	0	1	0.9879
+0	0	1	0.9886
+0	0	1	0.9884
+0	0	1	0.9889
+0	1	0	0.0142
+0	1	0	0.0139
+0	1	0	0.0136
+0	1	0	0.0132
+1	0	0	0.0088
+1	0	0	0.0094
+1	0	0	0.0092
+1	0	0	0.0099
+1	1	1	0.9900
+1	1	1	0.9906
+1	1	1	0.9905
+1	1	1	0.9908
+
+
+---------------------------------------------
+Running XNOR experiment with 10 hidden neurons
+---------------------------------------------
+Error in the 100-th learning cycle = 2.065042
+Error in the 200-th learning cycle = 0.352825
+Error in the 300-th learning cycle = 0.054451
+Error in the 400-th learning cycle = 0.026208
+Error in the 500-th learning cycle = 0.016803
+Error in the 600-th learning cycle = 0.012230
+Error in the 700-th learning cycle = 0.009557
+Error in the 800-th learning cycle = 0.007816
+Error in the 900-th learning cycle = 0.006596
+Error in the 1000-th learning cycle = 0.005696
+Error in the 1100-th learning cycle = 0.005006
+Error in the 1200-th learning cycle = 0.004461
+Error in the 1300-th learning cycle = 0.004020
+Error in the 1400-th learning cycle = 0.003656
+Error in the 1500-th learning cycle = 0.003351
+Error in the 1600-th learning cycle = 0.003092
+Error in the 1700-th learning cycle = 0.002869
+Error in the 1800-th learning cycle = 0.002675
+Error in the 1900-th learning cycle = 0.002505
+Error in the 2000-th learning cycle = 0.002355
+Error in the 2100-th learning cycle = 0.002221
+Error in the 2200-th learning cycle = 0.002102
+Error in the 2300-th learning cycle = 0.001994
+Error in the 2400-th learning cycle = 0.001896
+Error in the 2500-th learning cycle = 0.001808
+Error in the 2600-th learning cycle = 0.001727
+Error in the 2700-th learning cycle = 0.001653
+Error in the 2800-th learning cycle = 0.001584
+Error in the 2900-th learning cycle = 0.001522
+Error in the 3000-th learning cycle = 0.001463
+Error in the 3100-th learning cycle = 0.001409
+Error in the 3200-th learning cycle = 0.001359
+Error in the 3300-th learning cycle = 0.001312
+Error in the 3400-th learning cycle = 0.001268
+Error in the 3500-th learning cycle = 0.001227
+Error in the 3600-th learning cycle = 0.001188
+Error in the 3700-th learning cycle = 0.001152
+Error in the 3800-th learning cycle = 0.001118
+Error in the 3900-th learning cycle = 0.001086
+Error in the 4000-th learning cycle = 0.001055
+Error in the 4100-th learning cycle = 0.001026
+Error in the 4197-th learning cycle = 0.001000
+
+The connection weights in the output layer:
+0.611895 2.521958 -10.189866 0.236291 1.002126 -5.892152 -5.730398 0.677650 -0.468193 -4.478595 
+
+The connection weights in the hidden layer:
+-0.567349 -1.047956 0.072530 0.180113 0.352947 
+-2.248531 -2.150278 0.135570 0.073590 0.208767 
+-6.781565 5.934940 0.040851 -0.007496 3.048427 
+0.363698 -0.659858 0.399561 -0.338971 0.808824 
+-1.024685 -1.035163 0.227288 0.130439 0.736910 
+3.890714 -4.996518 -0.032427 -0.023001 2.133642 
+3.816766 -4.936257 0.027573 -0.069557 2.103100 
+0.185073 -0.320297 0.294176 0.178930 0.553458 
+-0.061520 -1.827186 0.473992 0.532958 0.202280 
+
+Test results for XNOR with 10 hidden neurons:
+Input 1	Input 2	Desired	Output
+0	0	1	0.9899
+0	0	1	0.9909
+0	0	1	0.9913
+0	0	1	0.9922
+0	1	0	0.0109
+0	1	0	0.0113
+0	1	0	0.0118
+0	1	0	0.0122
+1	0	0	0.0089
+1	0	0	0.0095
+1	0	0	0.0097
+1	0	0	0.0105
+1	1	1	0.9856
+1	1	1	0.9860
+1	1	1	0.9863
+1	1	1	0.9866
